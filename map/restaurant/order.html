@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--Info-->
+        <meta charset="UTF-8"/>
+        <title>ULTIMATE RESTAURANT 2017</title>
+        
+        <!--Status Color For Chrome Mobile-->
+        <meta name="theme-color" content="#8A769F">
+        
+         <!--Bootstrap CSS-->
+        <link rel="stylesheet" type="text/css" href="../../css/bootstrap-4.0/bootstrap.css">
+        
+        <!--CSS-->
+        <link rel="stylesheet" type="text/css" href="../../css/style.css">
+        <link rel="stylesheet" type="text/css" href="../../css/style-home.css">
+        <link rel="stylesheet" type="text/css" href="../../css/style-nav.css">
+        <link rel="stylesheet" type="text/css" href="../../css/style-footer.css">
+        <link rel="stylesheet" type="text/css" href="../../css/style-products.css">
+        
+        <!--Font-->
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet">
+        
+        <!--Icon-->
+        <link rel="icon" href="../../resources/img/icono.png"/>
+        
+        <!--JQuery-->
+        <script src="../../js/jquery/jquery-3.1.1.min.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+        
+        <!--Bootstrap JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
+        <script src="../../js/bootstrap-4.0/bootstrap.js"></script>
+        
+        <!--Javascript-->
+        <script src="../../js/isSessionActive.js" type="text/javascript"></script>
+        <script src="../../js/isWaiter.js" type="text/javascript"></script>
+        <script src="../../js/cookies-map.js" type="text/javascript"></script>
+        <script src="../../js/logout.js" type="text/javascript"></script>
+        <script src="../../js/tableOrders.js" type="text/javascript"></script>
+        <script src="../../js/addOrder.js" type="text/javascript"></script>
+        <script src="../../js/checkTableId.js" type="text/javascript"></script>
+        <script src="../../js/plates.js" type="text/javascript"></script>
+    </head>
+    <body>
+        <!--NavBar-->
+        <nav>
+            <img src="../../resources/img/logo.png" class="logo-nav">
+            <div class="nav-buttons">
+                <a href="home.html">Inicio</a>
+                <a href="cashRegister.html">Caja Registradora</a>
+                <input class="button" id="logoutButton" type="button" value="Cerrar Sesión"/>
+            </div>
+        </nav>
+        
+        <!--Content-->
+        <div class="container">
+            
+            <div id="message"></div>
+            
+            <!--Container1-->
+            <div class="container-1">
+                <h3 id="tableId"></h3>
+                <input data-toggle="modal" data-target=".bd-example-modal-lg-new-order" class="button" type="button" value="Agregar platillo">
+            </div>
+                
+            <!--Container>-->
+            <div class="container-2" id="tableOrders">
+                <h3>Órdenes</h3>
+            </div>  
+        </div>
+        
+        <!--Add Order modal-->
+        <div class="modal fade bd-example-modal-lg-new-order" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content ui-front">
+                    <input class="field-text search-bar search-field" id="plate" placeholder="Buscar platillo...">
+                    <input class="search-button" id="orderButton" type="submit" value="Añadir">
+                </div>
+            </div>
+        </div>
+    
+        <!--Footer-->
+        <footer>Ultimate Restaurant 2017</footer>
+        
+         <!--Javascript-->
+        <script src="../../js/features/product-object.js"></script>
+        
+    </body>
+</html>

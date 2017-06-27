@@ -1,0 +1,11 @@
+body{
+    background: url("/ULTIMATERESTAURANT2017/resources/img/background.jpg") no-repeat;
+    /*background-color: white;#8A769F*/
+    font-family: 'Open Sans', sans-serif;
+    margin: 0px;
+}
+
+.hidden
+{
+    display: none;
+}
